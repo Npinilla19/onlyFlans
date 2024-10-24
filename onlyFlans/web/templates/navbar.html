@@ -1,32 +1,50 @@
+<div class="container px-3 py-2 bg-dark-subtle border-bottom">
+  <div class="container">
+    <div
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+    >
+      <a
+        href="/"
+        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+      >
+        {% load static %}
+        <img src="{% static 'of-logo.png' %}" alt="logo" height="40 px" />
+      </a>
 
-<div class="container px-3 py-2 text-bg-dark border-bottom">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-        </a>
-
-        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-          <li>
-            <a href="#" class="nav-link text-white">
-              <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
-              Indice
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-              Acerca
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
-              Bienvenido clientes
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul
+        class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+      >
+        <li>
+          <a
+            href="http://127.0.0.1:8000/#"
+            class="nav-link text-danger-emphasis"
+          >
+            <svg class="bi d-block mx-auto mb-1" width="24" height="24"></svg>
+            <i class="fa-solid fa-indent fa-xl"></i>
+            Indice
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://127.0.0.1:8000/acerca/"
+            class="nav-link text-danger-emphasis"
+          >
+            <svg class="bi d-block mx-auto mb-1" width="24" height="24"></svg>
+            <i class="fa-solid fa-address-card fa-xl"></i>
+            Acerca
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://127.0.0.1:8000/bienvenido/"
+            class="nav-link text-danger-emphasis"
+          >
+            <svg class="bi d-block mx-auto mb-1" width="24" height="24"></svg>
+            <i class="fa-solid fa-door-open fa-xl"></i>
+            Bienvenido clientes
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
-  
+</div>
