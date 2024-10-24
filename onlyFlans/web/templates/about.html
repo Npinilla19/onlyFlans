@@ -1,4 +1,4 @@
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,8 +7,6 @@
     <title>Document</title>
   </head>
   <body>
-    {% block 'base' %} {% include 'base.html' %} {% endblock %}
-
     <h1 class="container">Acerca</h1>
   </body>
 </html>
