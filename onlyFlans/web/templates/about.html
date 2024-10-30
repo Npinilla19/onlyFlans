@@ -1,13 +1,58 @@
 {% extends 'base.html' %} {% block content %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1 class="container">Acerca</h1>
-  </body>
-</html>
+<body>
+  <section id="informacion" class="d-none d-sm-none d-md-block">
+      <div class="container pt-5">
+        <h2 class="text-center fw-bold mb-3">Sobre Nosotros</h2>
+        <hr />
+        <div class="row align-items-center">
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="Basic checkbox toggle button group"
+          >
+            <input
+              type="checkbox"
+              class="btn-check"
+              id="btncheck1"
+              autocomplete="off"
+            />
+            <label class="boton1 btn btn-secondary m-2 border border-dark" for="btncheck1"
+              ><i class="fa-solid fa-address-card fa-2xl"></i></label>
+
+            <input
+              type="checkbox"
+              class="btn-check"
+              id="btncheck2"
+              autocomplete="off"
+            />
+            <label class="boton2 btn btn-secondary m-2 border border-dark"for="btncheck2"
+              ><i class="fa-solid fa-kitchen-set fa-2xl"></i></label>
+
+            <input
+              type="checkbox"
+              class="btn-check"
+              id="btncheck3"
+              autocomplete="off"
+            />
+            <label class="boton3 btn btn-secondary m-2 border border-dark" for="btncheck3"
+              ><i class="fa-solid fa-map-location-dot fa-xl"></i></label>
+          </div>
+          <div class="col-md-4 mb-5">
+            <p class="texto1">
+              OnlyFlans es una empresa dedicada al mundo de la pastelería y los postres, con un enfoque especial en la venta de flan, que inspira su nombre. Fundada en 2021 en Santiago de Chile, nació como una iniciativa familiar con el objetivo de ofrecer productos de alta calidad a sus clientes.
+            </p>
+          </div>
+          <div class="col-md-4 mb-5">
+            <p class="texto2">
+              A través de su pasión por la pastelería, OnlyFlans ha logrado crear un espacio acogedor donde los clientes pueden disfrutar de deliciosos postres, todo ello en un entorno familiar y amigable.
+            </p>
+          </div>
+          <div class="col-md-4 mb-5">
+            <p class="texto3">
+              Ubicada en el corazón de Providencia, a pocos pasos del metro Parque Bustamante, OnlyFlans se ha convertido en un referente en el sector de los postres, destacándose por su compromiso con la calidad y el sabor. La empresa busca brindar una experiencia única a los amantes de los dulces, ofreciendo una variedad de flanes que combinan tradición y creatividad.
+            </p>
+          </div>
+        </div>
+      </div>
+</body>
 {% endblock %}
