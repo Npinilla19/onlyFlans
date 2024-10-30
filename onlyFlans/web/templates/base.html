@@ -16,6 +16,8 @@
     />
   </head>
   <body>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
     <!--comentario-->
     {% block 'header' %} {% include 'header.html' %} {% endblock %}
 
