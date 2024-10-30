@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% block content %}
+<form method="post" action="/contacto/">
+  {% csrf_token %}
+  <div class="mb-3 container">
+    {{ form.customer_name.label_tag }}
+    <input
+      type="text"
+      class="form-control"
+      id="customerName"
+      name="customer_name"
+      placeholder="Ingrese su nombre"
+      value="{{ form.customer_name.value|default:'' }}"
+    />
+    {{ form.customer_name.errors }}
+  </div>
+  <div class="mb-3 container">
+    <label for="customerEmail" class="form-label">Email address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="customerEmail"
+      name="customer_email"
+      placeholder="name@example.com"
+      value="{{ form.customer_email.value|default:'' }}"
+    />
+    {{ form.customer_email.errors }}
+  </div>
+  <div class="mb-3 container">
+    <label for="messageTextarea" class="form-label">Mensaje</label>
+    <textarea
+      class="form-control"
+      id="messageTextarea"
+      name="message"
+      rows="3"
+      placeholder="Escribe tu mensaje aquí..."
+    >
+{{ form.message.value|default:'' }}</textarea
+    >
+    {{ form.message.errors }}
+    <button type="submit" class="btn btn-secondary btn-lg mt-5">Enviar</button>
+  </div>
+</form>
+{% endblock %}

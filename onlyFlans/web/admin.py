@@ -1,3 +1,4 @@
+from .models import ContactForm
 from django.contrib import admin
 from .models import Flan
 
@@ -6,3 +7,6 @@ from .models import Flan
 class FlanAdmin(admin.ModelAdmin):
     list_display = ('name', 'is_private', 'flan_uuid')
     search_fields = ('name', 'description')
+
+
+admin.site.register(ContactForm)

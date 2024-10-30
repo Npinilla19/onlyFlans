@@ -1,38 +1,26 @@
 {% extends 'base.html' %} {% block content %}
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <title>Bienvenida</title>
-  </head>
-  <body>
-    <div class="container mt-4">
-      <h1>Productos Exclusivos</h1>
-      <div class="row">
-        {% for flan in flanes %}
-        <div class="col-md-6">
-          <div class="card mb-5 mt-5">
-            <img
-              src="{{ flan.image_url }}"
-              class="card-img-top"
-              alt="{{ flan.name }}"
-            />
-            <div class="card-body">
-              <h5 class="card-title">{{ flan.name }}</h5>
-              <p class="card-text">{{ flan.description }}</p>
-              <a href="#" class="btn btn-primary">Ver Más</a>
-            </div>
+<body>
+  <div class="container mt-4">
+    <h1>Productos Exclusivos</h1>
+    <div class="row">
+      {% for flan in flanes %}
+      <div class="col-md-6">
+        <div class="card mb-5 mt-5">
+          <img
+            src="{{ flan.image_url }}"
+            class="card-img-top"
+            alt="{{ flan.name }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ flan.name }}</h5>
+            <p class="card-text">{{ flan.description }}</p>
+            <a href="#" class="btn btn-primary">Ver Más</a>
           </div>
         </div>
-        {% endfor %}
       </div>
+      {% endfor %}
     </div>
-  </body>
-</html>
+  </div>
+</body>
 
 {% endblock %}
